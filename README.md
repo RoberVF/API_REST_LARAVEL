@@ -12,3 +12,8 @@ Crear las migraciones
 Borrar la base de datos y volverla a crear (Tambien corro la Seeder)
 `php artisan migrate:fresh --seed`
 
+Crear las colecciones de Customer e Invoice
+`php artisan make:resource CustomerCollection`
+`php artisan make:resource InvoiceCollection`
+
+
