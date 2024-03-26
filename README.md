@@ -29,10 +29,10 @@ Crear el resource para Customer e Invoice
 
 ### Agregar filtros a la URL:  
 Con un solo filtro (?):  
-- /api/v1/customers**?name['eq']=NOMBRE**  
+- /api/v1/customers?name['eq']=NOMBRE  
 
 Concatenar varios filtros (&):
-- /api/v1/customers**?name['eq']=NOMBRE&includeInvoices=true**
+- /api/v1/customers?name['eq']=NOMBRE&includeInvoices=true
 
 
 
