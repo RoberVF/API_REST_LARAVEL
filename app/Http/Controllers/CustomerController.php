@@ -11,6 +11,7 @@ use App\Http\Resources\CustomerCollection;
 
 use Illuminate\Http\Request;
 use App\Filters\CustomerFilter;
+use App\Http\Resources\CustomerResource;
 
 class CustomerController extends Controller
 {
@@ -52,7 +53,11 @@ class CustomerController extends Controller
      */
     public function show(Customer $customer)
     {
-        //
+        $includeInvoices = request() -> query('includeInvoices');
+        if($includeInvoices){
+            return new CustomerResource($customer -> loadMissing('invoices'));
+        }
+        return new CustomerResource($customer);
     }
 
     /**

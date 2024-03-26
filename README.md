@@ -16,6 +16,10 @@ Crear las colecciones de Customer e Invoice
 `php artisan make:resource CustomerCollection`  
 `php artisan make:resource InvoiceCollection`  
 
+Crear el resource para Customer e Invoice  
+`php artisan make:resource CustomerResource`
+`php artisan make:resource InvoiceResource`
+
 # Datos de interes
 
 ### Para crear la BBDD en Laragon:  
