@@ -16,4 +16,11 @@ Crear las colecciones de Customer e Invoice
 `php artisan make:resource CustomerCollection`  
 `php artisan make:resource InvoiceCollection`  
 
+# Datos de interes
+
+Para crear la BBDD en Laragon  
+- Base de Datos
+- Abrir
+- Click derecho > Crear Nuevo > Base de Datos
+
 

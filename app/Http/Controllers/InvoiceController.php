@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Invoice;
 use App\Http\Requests\StoreInvoiceRequest;
 use App\Http\Requests\UpdateInvoiceRequest;
+
+use App\Models\Invoice;
+use App\Http\Resources\InvoiceCollection;
+
 
 class InvoiceController extends Controller
 {
@@ -13,7 +16,8 @@ class InvoiceController extends Controller
      */
     public function index()
     {
-        //
+        $invoices = Invoice::paginate();
+        return new InvoiceCollection($invoices);
     }
 
     /**
