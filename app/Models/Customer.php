@@ -9,7 +9,15 @@ class Customer extends Model
 {
     use HasFactory;
 
-    protected $fillable = [];
+    protected $fillable = [
+        'name',
+        'type',
+        'email',
+        'address',
+        'city',
+        'state',
+        'postal_code'
+    ];
 
     public function invoices(){
         // Para cada cliente varias invoices
