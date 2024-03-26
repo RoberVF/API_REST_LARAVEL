@@ -18,9 +18,18 @@ Crear las colecciones de Customer e Invoice
 
 # Datos de interes
 
-Para crear la BBDD en Laragon  
+### Para crear la BBDD en Laragon:  
 - Base de Datos
 - Abrir
 - Click derecho > Crear Nuevo > Base de Datos
+
+### Agregar filtros a la URL:  
+Con un solo filtro (?):  
+- /api/v1/customers**?name['eq']=NOMBRE**  
+
+Concatenar varios filtros (&):
+- /api/v1/customers**?name['eq']=NOMBRE&includeInvoices=true**
+
+
 
 
